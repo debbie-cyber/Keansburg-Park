@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="operating-system" content="Windows">
+    <meta name="browser" content="Edge, Chrome, Mozilla Firefox, Safari">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Welcome to Keansburg Park</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+
+        .main-header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-nav li {
+            margin: 0 15px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav a:hover {
+            color: #e74c3c;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #c0392b;
+        }
+
+        @media screen and (max-width: 768px) {
+            .main-header {
+                flex-direction: column;
+            }
+
+            .main-nav {
+                margin-top: 15px;
+            }
+
+            .search-bar {
+                margin-top: 15px;
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section#home {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        section#home h2 {
+            font-size: 2.5em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .park-info {
+            margin-top: 20px;
+        }
+
+        .park-info p {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            color: #000000;
+        }
+
+        .park-highlights {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .highlight-item {
+            flex: 0 0 calc(33.33% - 30px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .highlight-item:hover {
+            transform: scale(1.05);
+        }
+
+        .highlight-item img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .highlight-item-content {
+            padding: 20px;
+        }
+
+        .highlight-item h3 {
+            color: #e74c3c;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .highlight-item p {
+            font-size: 1.2em;
+            color: #000000;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            margin-bottom: 40px;
+        }
+
+        .section-heading h2 {
+            font-size: 2.5em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .section-heading p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .zone {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .zone:hover {
+            transform: scale(1.05);
+        }
+
+        .zone h3 {
+            color: #e74c3c;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .zone p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .zone img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            margin-bottom: 40px;
+        }
+
+        .section-heading h2 {
+            font-size: 2.5em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .section-heading p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .restaurant {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .restaurant:hover {
+            transform: scale(1.05);
+        }
+
+        .restaurant h3,
+        .restaurant p {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .restaurant h3 {
+            color: #e74c3c;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .restaurant p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .restaurant img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        #entertainment {
+            background-color: #fff;
+            /* Background color for the section */
+            padding: 50px 20px;
+            /* Adjust padding as needed */
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .entertainment-item {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .entertainment-item:hover {
+            transform: scale(1.05);
+        }
+
+        .entertainment-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .entertainment-content {
+            padding: 20px;
+        }
+
+        .entertainment-title {
+            color: #e74c3c;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .entertainment-description {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .tickets-section {
+            background-color: #f9f9f9;
+            /* Background color for the section */
+            padding: 50px 20px;
+            /* Adjust padding as needed */
+        }
+
+        .ticket-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .ticket-option:hover {
+            transform: scale(1.05);
+        }
+
+        .ticket-icon img {
+            max-width: 50px;
+            height: auto;
+        }
+
+        .ticket-details {
+            margin-left: 20px;
+        }
+
+        .ticket-title {
+            color: #e74c3c;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .ticket-description {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .ticket-price {
+            font-size: 1.5em;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .gallery-section {
+            background-color: #333;
+            /* Background color for the section */
+            color: #fff;
+            /* Text color for the section */
+            padding: 50px 20px;
+            /* Adjust padding as needed */
+        }
+
+        .about-section {
+            background-color: #f8f8f8;
+            color: #333;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            color: #e74c3c;
+            /* Highlight color */
+            margin-bottom: 10px;
+        }
+
+        .section-description {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .about-text p {
+            font-size: 1.4em;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .about-image {
+            flex: 1;
+            margin-top: 20px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-section {
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .section-description {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .contact-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-info,
+        .contact-form {
+            flex: 1;
+            max-width: 500px;
+            text-align: left;
+            margin: 20px;
+        }
+
+        .contact-info h3,
+        .contact-form h3 {
+            font-size: 1.8em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #c0392b;
+        }
+
+        .google-map {
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            padding: 40px 0;
+            background-color: #fff;
+        }
+
+        .footer .social {
+            text-align: center;
+            padding-bottom: 25px;
+            color: #4b4c4d;
+        }
+
+        .footer .social a {
+            font-size: 24px;
+            color: inherit;
+            border: 0px;
+            width: 40px;
+            height: 40px;
+            line-height: 38px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 8px;
+            opacity: 0.7;
+        }
+
+        .footer .social a:hover {
+            opacity: 1;
+            color: #c0392b;
+        }
+
+        .footer ul {
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .footer ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+        .footer ul li {
+            display: inline-block;
+            padding: 0 15px;
+        }
+
+        .footer ul li a:hover {
+            opacity: 1;
+            color: #c0392b;
+        }
+
+        .footer .copyright {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 15px;
+            color: inherit;
+        }
+
+        /* Ticker Styles */
+        #ticker {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        /* Visitor Count Styles */
+        #visitor-count {
+            top: 10px;
+            right: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .carousel-container {
+            margin: 5px 100px;
+            width: 220px;
+            /* Set the container width to the width of a single image */
+            overflow: hidden;
+            /* Hide overflow content */
+        }
+
+        .carousel-slide {
+            display: flex;
+            /* Use flexbox for side by side layout */
+        }
+
+        .carousel-item {
+            flex: 0 0 auto;
+            /* Ensure items don't grow/shrink and have auto width */
+            width: 220px;
+            /* Width of individual image */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        .carousel-item img {
+            width: 100%;
+            /* Occupy the full width of the carousel item */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">Keansburg Park</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#zones">Zones & Attractions</a></li>
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
+                <li><a href="#tickets">Tickets & Prices</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </header>
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Keansburg Park - Where Every Smile Counts!</h2>
+
+        <!-- Park Information -->
+        <div class="park-info">
+            <p>Keansburg Park is more than just an amusement park; it's a city and nation's pride! Crafted with passion
+                and dedication by the renowned Gottlieb Groups of Companies, our park stands as a testament to five
+                years of relentless development to craft the perfect destination for you and your loved ones.</p>
+
+            <p>Spread across a sprawling 45 acres of enchanting land, Keansburg Park has become a beacon of joy, drawing
+                visitors from all corners of the nation. As you step into our world, you'll feel the warmth of our
+                commitment to creating a magical experience that goes beyond the ordinary.</p>
+        </div>
+
+        <!-- Park Highlights -->
+        <div class="park-highlights">
+            <div class="highlight-item">
+                <img src="e-project pictures/Giants County Fair_Midway 1.jpg" alt="Prime Focus">
+                <div class="highlight-item-content">
+                    <h3>Prime Focus</h3>
+                    <p>Our park has become a prime focus of the city and a source of national pride. We've crafted an
+                        oasis of excitement and joy for people of all ages.</p>
+                </div>
+            </div>
+            <div class="highlight-item">
+                <img src="e-project pictures/development process.png" alt="Development Process">
+                <div class="highlight-item-content">
+                    <h3>Development Process</h3>
+                    <p>Patience and meticulous planning went into the creation of this extraordinary park. Five years of
+                        dedication and hard work have resulted in the park of our dreams.</p>
+                </div>
+            </div>
+
+            <div class="highlight-item">
+                <img src="e-project pictures/park area.png" alt="Park Area">
+                <div class="highlight-item-content">
+                    <h3>Park Area</h3>
+                    <p>Explore our vast expanse of 45 acres, where every corner is filled with attractions,
+                        entertainment, and memories waiting to be made.</p>
+                </div>
+            </div>
+    </section>
+    <!-- Zones & Attractions Section -->
+    <section id="zones">
+        <div class="section-heading">
+            <h2>Explore Our Zones & Attractions</h2>
+            <p>Discover the diverse zones and exciting attractions that await you at Keansburg Park.</p>
+        </div>
+
+        <!-- Zone 1: Adventure Land -->
+        <div class="zone">
+            <h3>Adventure Land</h3>
+            <p>Embark on thrilling adventures in our Adventure Land. From high-speed roller coasters to challenging
+                obstacle courses, this zone is perfect for adrenaline seekers.</p>
+            <img src="e-project pictures/Maurer Announces New Spike Coaster Trains, Tilting Seats and Layouts - Coaster101.jpeg"
+                alt="Adventure Land Image">
+        </div>
+
+        <!-- Zone 2: Fantasy World -->
+        <div class="zone">
+            <h3>Fantasy World</h3>
+            <p>Step into the magical world of Fantasy World, where fairy tales come to life. Enchanting rides, whimsical
+                characters, and colorful attractions await you and your family.</p>
+            <img src="e-project pictures/fantasy world.jpg" alt="Fantasy World Image">
+        </div>
+
+        <!-- Zone 3: Safari Safari -->
+        <div class="zone">
+            <h3>Safari Safari</h3>
+            <p>Experience the wonders of the animal kingdom in Safari Safari. Encounter exotic wildlife, take a safari
+                tour, and enjoy educational exhibits that celebrate the beauty of nature.</p>
+            <img src="e-project pictures/west-midland-safari-and.jpg" alt="Safari Safari Image">
+        </div>
+    </section>
+
+
+    <!-- Restaurants Section -->
+    <section id="restaurants">
+        <div class="section-heading">
+            <h2 style="color: #e74c3c;">Dine-in Delights</h2>
+            <p>Explore our diverse dining options that cater to every taste bud. From casual snacks to gourmet meals, we
+                have something for everyone.</p>
+        </div>
+
+        <!-- Restaurant 1: Parkside Cafe -->
+        <div class="restaurant">
+            <img src="e-project pictures/parkside-cafe.jpg" alt="Parkside Cafe Image">
+            <div>
+                <h3>Parkside Cafe</h3>
+                <p>Indulge in a delightful dining experience at Parkside Cafe. Enjoy a variety of cuisines in a relaxing
+                    atmosphere with scenic views of the park.</p>
+            </div>
+        </div>
+
+        <!-- Restaurant 2: Taste of Italy -->
+        <div class="restaurant">
+            <div>
+                <h3>Taste of Italy</h3>
+                <p>Savor the flavors of Italy at our Taste of Italy restaurant. From pasta to pizza, experience
+                    authentic Italian dishes in a charming setting.</p>
+            </div>
+            <img src="e-project pictures/italian.jpg" alt="Taste of Italy Image">
+        </div>
+
+        <!-- Restaurant 3: Tropical Bites -->
+        <div class="restaurant">
+            <img src="e-project pictures/tropical.jpg" alt="Tropical Bites Image">
+            <div>
+                <h3>Tropical Bites</h3>
+                <p>Transport yourself to a tropical paradise with the delicious offerings at Tropical Bites. Enjoy
+                    exotic dishes and refreshing beverages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entertainment Section -->
+    <section id="entertainment">
+        <div class="section-heading">
+            <h2 class="section-title">Entertainment Extravaganza</h2>
+            <p class="section-description">Immerse yourself in a world of captivating performances and shows that will
+                leave you mesmerized.</p>
+        </div>
+
+        <!-- Entertainment Items -->
+        <div class="zone entertainment-item">
+            <img src="e-project pictures/dancing.jpeg" alt="Enchanting Performances Image" class="entertainment-image">
+            <div class="entertainment-content">
+                <h3 class="entertainment-title">Enchanting Performances</h3>
+                <p class="entertainment-description">Experience magical moments with our enchanting live performances.
+                    From acrobatics to dance, our talented performers will leave you spellbound.</p>
+            </div>
+        </div>
+
+        <div class="zone entertainment-item">
+            <img src="e-project pictures/concert.jpeg" alt="Concerts Under the Stars Image" class="entertainment-image">
+            <div class="entertainment-content">
+                <h3 class="entertainment-title">Concerts Under the Stars</h3>
+                <p class="entertainment-description">Enjoy the rhythm of live music under the twinkling stars. Our
+                    open-air concerts feature talented artists, creating a magical atmosphere for music lovers.</p>
+            </div>
+        </div>
+
+        <div class="zone entertainment-item">
+            <img src="e-project pictures/comedy.jpg" alt="Comedy Club Image" class="entertainment-image">
+            <div class="entertainment-content">
+                <h3 class="entertainment-title">Comedy Club</h3>
+                <p class="entertainment-description">Laugh out loud at our Comedy Club! Talented comedians will keep you
+                    entertained with their hilarious acts, ensuring a night full of joy and laughter.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets & Prices Section -->
+    <section id="tickets" class="tickets-section">
+        <div class="section-heading">
+            <h2 class="section-title">Explore Our Tickets & Prices</h2>
+            <p class="section-description">Choose the perfect ticket for your unforgettable adventure at Keansburg Park.
+            </p>
+        </div>
+
+        <!-- Ticket Options -->
+        <div class="ticket-option">
+            <div class="ticket-icon">
+                <img src="e-project pictures/ticket icon.webp" alt="Ticket Icon">
+            </div>
+            <div class="ticket-details">
+                <h3 class="ticket-title">Single-Day Pass</h3>
+                <p class="ticket-description">Enjoy a full day of excitement with unlimited access to all attractions
+                    and shows.</p>
+                <p class="ticket-price">$29.99</p>
+            </div>
+        </div>
+
+        <div class="ticket-option">
+            <div class="ticket-icon">
+                <img src="e-project pictures/family ticket.png" alt="Family Ticket Icon">
+            </div>
+            <div class="ticket-details">
+                <h3 class="ticket-title">Family Pack</h3>
+                <p class="ticket-description">Perfect for families! Includes admission for 2 adults and 2 children.</p>
+                <p class="ticket-price">$99.99</p>
+            </div>
+        </div>
+
+        <div class="ticket-option">
+            <div class="ticket-icon">
+                <img src="e-project pictures/vip icon.png" alt="VIP Ticket Icon">
+            </div>
+            <div class="ticket-details">
+                <h3 class="ticket-title">VIP Experience</h3>
+                <p class="ticket-description">Upgrade to VIP for priority access, exclusive shows, and special perks.
+                </p>
+                <p class="ticket-price">$59.99</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- Carousel Container -->
+        <div class="carousel-container">
+            <div class="carousel-slide" id="carouselSlide">
+                <!-- Carousel Items -->
+            </div>
+            <div class="carousel-arrow left-arrow" onclick="moveSlide(-1)">←</div>
+            <div class="carousel-arrow right-arrow" onclick="moveSlide(1)">→</div>
+        </div>
+
+        <script> // carousel script implementation
+            // Images array for the carousel
+            const images = [
+                // 'images/carousel images/❤️.jpeg',
+                'images/carousel images/29b1592e-9cc0-4b1a-97b4-51bf6dbe53a1.jpg',
+                'images/carousel images/bedba37f-ac5b-4abd-8132-a16b6448f3ba.jpg',
+                'images/carousel images/Space&Space, Allen wei.jpg',
+                'images/carousel images/Hand photo.jpg',
+                'images/carousel images/Reaching Body Goals Vegan.jpg',
+                // Add more images as needed
+            ];
+
+            const carouselSlide = document.getElementById('carouselSlide');
+
+            // Initialize carousel with images
+            images.forEach((image, index) => {
+                const carouselItem = document.createElement('div');
+                carouselItem.classList.add('carousel-item');
+                carouselItem.innerHTML = `<img src="${image}" alt="Slide ${index + 1}">`;
+                carouselSlide.appendChild(carouselItem);
+            });
+
+            let currentIndex = 0;
+
+            // Function to handle slide navigation
+            function moveSlide(direction) {
+                // Alter the current index based on navigation direction
+                currentIndex += direction;
+
+                // If the navigation goes before first slide, loop to last slide
+                if (currentIndex < 0) {
+                    currentIndex = images.length - 1;
+                }
+                // If the navigation goes past the last slide, loop back to first slide
+                else if (currentIndex >= images.length) {
+                    currentIndex = 0;
+                }
+
+                // Calculate offset for current slide, according to its index
+                const offset = -currentIndex * 200; // This is multiplied by a fixed width for each slide
+                // Apply offset to the carousel to bring the current slide into view
+                carouselSlide.style.transform = `translateX(${offset}px)`;
+            }
+
+            // Automatically move slide every 5 seconds
+            setInterval(() => moveSlide(1), 5000); // 5000 milliseconds = 5 seconds
+
+
+            // Optionally: Autoplay feature
+            // setInterval(() => moveSlide(1), 2000); // Move slide every 2 seconds
+        </script>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="section-heading">
+            <h2 class="section-title">About Keansburg Park</h2>
+            <p class="section-description">Discover the story behind Keansburg Park and our commitment to creating
+                magical experiences for our visitors.</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to <span class="highlight">Keansburg Park</span>, where dreams come to life and every visit
+                    is a journey filled with joy and excitement. Our story began with a vision to create a place that
+                    goes beyond being just an amusement park; a place that becomes a cherished part of your memories.
+                </p>
+
+                <p>Founded by a team of <span class="highlight">passionate</span> individuals, Keansburg Park has
+                    evolved into a symbol of fun, adventure, and community. With a dedication to quality and creativity,
+                    we have crafted an experience that captivates visitors of all ages.</p>
+
+                <p>At Keansburg Park, we believe in the magic of shared moments and the power of imagination. Our
+                    commitment to excellence is reflected in every corner of our <span class="highlight">45-acre
+                        wonderland</span>, where each attraction is designed to bring smiles and create lasting
+                    memories.</p>
+            </div>
+            <div class="about-image">
+                <img src="e-project pictures/about.jpg" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-heading">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-description">We're here to assist you. Feel free to drop us a message or give us a call!
+            </p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> <a href="mailto:info@keansburgpark.com">info@keansburgpark.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                <p><strong>Address:</strong> 123 Park Avenue, Keansburg, USA</p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="#" method="post" id="contactForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Google Map Embed -->
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-74.006!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQ4JzEwLjAiTiA3NMKwMDgnMzkuMCJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                width="100%" height="200" style="border: 2px solid #e74c3c; border-radius: 10px;" allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#tickets">Tickets</a>
+            </li>
+            <li>
+                <a href="#gallery">Gallery</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            &copy; Keansburg Park Official Website. All rights reserved.
+        </p>
+    </section>
+
+    <!-- Continuous Scrolling Ticker div -->
+    <div id="ticker">
+        <marquee behavior="Scrolling" direction="left">
+            Date: <span id="current-date"></span>
+            | Time: <span id="current-time"></span>
+            | Location: <span id="current-location"></span>
+        </marquee>
+    </div>
+
+    <!-- Visitor Count -->
+    <div id="visitor-count">
+        Visitor Counts:
+        <span id="count">0</span>
+    </div>
+
+    <!-- JavaScript for Dynamic Functionalities -->
+    <script>
+        // Global variable for visitor count
+        var counts = 0;
+
+        // Mock geolocation coordinates for testing
+        const mockLocation = {
+            latitude: 40.7128,
+            longitude: -74.0060
+        };
+
+        // Simulated getLocation function (offline testing)
+        function getLocation() {
+            return Promise.resolve(mockLocation);
+        }
+
+        // Update date, time, and location in the ticker
+        async function updateTicker() {
+            const currentDate = new Date().toLocaleDateString();
+            const currentTime = new Date().toLocaleTimeString();
+            try {
+                const location = await getLocation();
+                document.getElementById("current-date").innerText = currentDate;
+                document.getElementById("current-time").innerText = currentTime;
+                document.getElementById("current-location").innerText = `Latitude: ${location.latitude}, Longitude: ${location.longitude}`;
+            } catch (error) {
+                console.error(error.message);
+            }
+        }
+
+        // Initial call to update ticker and visitor count
+        updateTicker();
+
+        // Update the time in the scroller every second
+        setInterval(updateTicker, 30000); // 1000 milliseconds = 1 second
+
+
+        // Update visitor count
+        function updateVisitorCount() {
+            counts++;
+            document.getElementById("count").innerText = counts;
+
+            // Simulated update for JSON file (client-side only, not a real save)
+            const file = new Blob([JSON.stringify({ counts: counts }, null, '  ')], { type: 'application/json' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(file);
+            a.download = 'SEMESTER 1 PROJECT  - Keansburg Park';
+            a.click();
+        }
+
+        // Initial call to update ticker and visitor count
+        updateTicker();
+
+        // You can call updateVisitorCount whenever a new visitor comes to your site.
+        // For example, add this to your carousel or other prominent sections of your site.
+        // updateVisitorCount();
+    </script>
+
+</body>
+
+</html>
