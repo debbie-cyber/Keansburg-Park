@@ -722,7 +722,7 @@
         <!-- Park Highlights -->
         <div class="park-highlights">
             <div class="highlight-item">
-                <img src="e-project pictures/Giants County Fair_Midway 1.jpg" alt="Prime Focus">
+                <img src="Giants County Fair_Midway 1.jpg" alt="Prime Focus">
                 <div class="highlight-item-content">
                     <h3>Prime Focus</h3>
                     <p>Our park has become a prime focus of the city and a source of national pride. We've crafted an
@@ -730,7 +730,7 @@
                 </div>
             </div>
             <div class="highlight-item">
-                <img src="e-project pictures/development process.png" alt="Development Process">
+                <img src="development process.png" alt="Development Process">
                 <div class="highlight-item-content">
                     <h3>Development Process</h3>
                     <p>Patience and meticulous planning went into the creation of this extraordinary park. Five years of
@@ -739,7 +739,7 @@
             </div>
 
             <div class="highlight-item">
-                <img src="e-project pictures/park area.png" alt="Park Area">
+                <img src="park area.png" alt="Park Area">
                 <div class="highlight-item-content">
                     <h3>Park Area</h3>
                     <p>Explore our vast expanse of 45 acres, where every corner is filled with attractions,
@@ -759,7 +759,7 @@
             <h3>Adventure Land</h3>
             <p>Embark on thrilling adventures in our Adventure Land. From high-speed roller coasters to challenging
                 obstacle courses, this zone is perfect for adrenaline seekers.</p>
-            <img src="e-project pictures/Maurer Announces New Spike Coaster Trains, Tilting Seats and Layouts - Coaster101.jpeg"
+            <img src="Maurer Announces New Spike Coaster Trains, Tilting Seats and Layouts - Coaster101.jpeg"
                 alt="Adventure Land Image">
         </div>
 
@@ -768,7 +768,7 @@
             <h3>Fantasy World</h3>
             <p>Step into the magical world of Fantasy World, where fairy tales come to life. Enchanting rides, whimsical
                 characters, and colorful attractions await you and your family.</p>
-            <img src="e-project pictures/fantasy world.jpg" alt="Fantasy World Image">
+            <img src="fantasy world.jpg" alt="Fantasy World Image">
         </div>
 
         <!-- Zone 3: Safari Safari -->
@@ -776,7 +776,7 @@
             <h3>Safari Safari</h3>
             <p>Experience the wonders of the animal kingdom in Safari Safari. Encounter exotic wildlife, take a safari
                 tour, and enjoy educational exhibits that celebrate the beauty of nature.</p>
-            <img src="e-project pictures/west-midland-safari-and.jpg" alt="Safari Safari Image">
+            <img src="west-midland-safari-and.jpg" alt="Safari Safari Image">
         </div>
     </section>
 
@@ -791,7 +791,7 @@
 
         <!-- Restaurant 1: Parkside Cafe -->
         <div class="restaurant">
-            <img src="e-project pictures/parkside-cafe.jpg" alt="Parkside Cafe Image">
+            <img src="parkside-cafe.jpg" alt="Parkside Cafe Image">
             <div>
                 <h3>Parkside Cafe</h3>
                 <p>Indulge in a delightful dining experience at Parkside Cafe. Enjoy a variety of cuisines in a relaxing
@@ -806,12 +806,12 @@
                 <p>Savor the flavors of Italy at our Taste of Italy restaurant. From pasta to pizza, experience
                     authentic Italian dishes in a charming setting.</p>
             </div>
-            <img src="e-project pictures/italian.jpg" alt="Taste of Italy Image">
+            <img src="italian.jpg" alt="Taste of Italy Image">
         </div>
 
         <!-- Restaurant 3: Tropical Bites -->
         <div class="restaurant">
-            <img src="e-project pictures/tropical.jpg" alt="Tropical Bites Image">
+            <img src="tropical.jpg" alt="Tropical Bites Image">
             <div>
                 <h3>Tropical Bites</h3>
                 <p>Transport yourself to a tropical paradise with the delicious offerings at Tropical Bites. Enjoy
@@ -830,7 +830,7 @@
 
         <!-- Entertainment Items -->
         <div class="zone entertainment-item">
-            <img src="e-project pictures/dancing.jpeg" alt="Enchanting Performances Image" class="entertainment-image">
+            <img src="dancing.jpeg" alt="Enchanting Performances Image" class="entertainment-image">
             <div class="entertainment-content">
                 <h3 class="entertainment-title">Enchanting Performances</h3>
                 <p class="entertainment-description">Experience magical moments with our enchanting live performances.
@@ -839,7 +839,7 @@
         </div>
 
         <div class="zone entertainment-item">
-            <img src="e-project pictures/concert.jpeg" alt="Concerts Under the Stars Image" class="entertainment-image">
+            <img src="concert.jpeg" alt="Concerts Under the Stars Image" class="entertainment-image">
             <div class="entertainment-content">
                 <h3 class="entertainment-title">Concerts Under the Stars</h3>
                 <p class="entertainment-description">Enjoy the rhythm of live music under the twinkling stars. Our
@@ -848,7 +848,7 @@
         </div>
 
         <div class="zone entertainment-item">
-            <img src="e-project pictures/comedy.jpg" alt="Comedy Club Image" class="entertainment-image">
+            <img src="comedy.jpg" alt="Comedy Club Image" class="entertainment-image">
             <div class="entertainment-content">
                 <h3 class="entertainment-title">Comedy Club</h3>
                 <p class="entertainment-description">Laugh out loud at our Comedy Club! Talented comedians will keep you
@@ -868,7 +868,7 @@
         <!-- Ticket Options -->
         <div class="ticket-option">
             <div class="ticket-icon">
-                <img src="e-project pictures/ticket icon.webp" alt="Ticket Icon">
+                <img src="ticket icon.webp" alt="Ticket Icon">
             </div>
             <div class="ticket-details">
                 <h3 class="ticket-title">Single-Day Pass</h3>
@@ -880,7 +880,7 @@
 
         <div class="ticket-option">
             <div class="ticket-icon">
-                <img src="e-project pictures/family ticket.png" alt="Family Ticket Icon">
+                <img src="family ticket.png" alt="Family Ticket Icon">
             </div>
             <div class="ticket-details">
                 <h3 class="ticket-title">Family Pack</h3>
@@ -891,7 +891,7 @@
 
         <div class="ticket-option">
             <div class="ticket-icon">
-                <img src="e-project pictures/vip icon.png" alt="VIP Ticket Icon">
+                <img src="vip icon.png" alt="VIP Ticket Icon">
             </div>
             <div class="ticket-details">
                 <h3 class="ticket-title">VIP Experience</h3>
@@ -915,12 +915,12 @@
         <script> // carousel script implementation
             // Images array for the carousel
             const images = [
-                // 'images/carousel images/❤️.jpeg',
-                'images/carousel images/29b1592e-9cc0-4b1a-97b4-51bf6dbe53a1.jpg',
-                'images/carousel images/bedba37f-ac5b-4abd-8132-a16b6448f3ba.jpg',
-                'images/carousel images/Space&Space, Allen wei.jpg',
-                'images/carousel images/Hand photo.jpg',
-                'images/carousel images/Reaching Body Goals Vegan.jpg',
+                // 'gallery1.jpg',
+                'gallery2.webp',
+                'gallery3.jpg',
+                'gallery4.jpeg',
+                'gallery5.webp',
+                'fair.jpg',
                 // Add more images as needed
             ];
 
@@ -990,7 +990,7 @@
                     memories.</p>
             </div>
             <div class="about-image">
-                <img src="e-project pictures/about.jpg" alt="About Us Image">
+                <img src="about.jpg" alt="About Us Image">
             </div>
         </div>
     </section>
